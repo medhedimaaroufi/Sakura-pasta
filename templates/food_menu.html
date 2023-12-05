@@ -1,0 +1,638 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Sakura Pasta</title>
+    <link rel="icon" href="{{url_for('static',filename='img/favicon.jpg')}}" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/bootstrap.min.css')}}" />
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/animate.css')}}" />
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/owl.carousel.min.css')}}" />
+    <!-- themify CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/themify-icons.css')}}" />
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/flaticon.css')}}" />
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/magnific-popup.css')}}" />
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/slick.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/gijgo.min.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/nice-select.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/all.css')}}" />
+    <!-- style CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='css/style.css')}}" />
+    <link rel="stylesheet" href="{{url_for('static',filename='css/menu-style.css')}}">
+    <script src="https://code.jquery.com/jquery-3.5.1.js"
+    integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous">
+    
+    </script>
+  </head>
+
+  <body>
+    <!--::header part start::-->
+    <header class="main_menu">
+      <div class="container">
+        <div class="row align-items-center">
+          <div class="col-lg-12">
+            <nav class="navbar navbar-expand-lg navbar-light">
+              <a class="navbar-brand" href="index.html">
+                <img src="{{url_for('static',filename='img/sakura.png')}}" alt="logo" />
+              </a>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+              <div
+                class="collapse navbar-collapse main-menu-item justify-content-end"
+                id="navbarSupportedContent"
+              >
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">Accueil</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="catalogue.html">Catalogue</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="food_menu.html">Menu</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link mobile-show" href="Reservation.html">Réservation</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="menu_btn">
+                <a
+                  href="Reservation.html"
+                  class="single_page_btn d-none d-sm-block "
+                  >Réservation</a
+                >
+              </div>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Header part end-->
+    <!-- breadcrumb start-->
+    <section class="breadcrumb breadcrumb_bg">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="breadcrumb_iner text-center">
+              <div class="breadcrumb_iner_item">
+                <h2>Notre Menu</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- breadcrumb start-->
+
+    <!--::chefs_part start::-->
+    <!-- food_menu start-->
+    <section class="food_menu gray_bg">
+        <div class="container">
+          <div class="row justify-content-between">
+            <div class="col-lg-5">
+              <div class="section_tittle">
+                <p>Découvrez nos délices</p>
+                <h2>Menu</h2>
+              </div>
+            </div>
+            
+            <div class="col-lg-6">
+              <div class="nav nav-tabs food_menu_nav" id="myTab" role="tablist">
+                <img
+                  src="{{url_for('static',filename='img/salad.png')}}"
+                  alt=""
+                  srcset=""
+                  width="35px"
+                  height="38px"
+                  style="margin-right: -12%"
+                  class="mobile-hide"
+                />
+                <a
+                  class="active"
+                  id="Special-tab"
+                  data-toggle="tab"
+                  href="#Entree"
+                  role="tab"
+                  aria-controls="Special"
+                  aria-selected="false"
+                  >Entrées<img src="{{url_for('static',filename='img/icon/play.svg')}}" alt="play"
+                /></a>
+            
+                  <img
+                  src="{{url_for('static',filename='img/spaguetti.png')}}"
+                  alt=""
+                  srcset=""
+                  width="35px"
+                  height="38px"
+                  style="margin-right: -12%"
+                  class="mobile-hide"
+                />
+                <a
+                  id="Breakfast-tab"
+                  data-toggle="tab"
+                  href="#Pasta"
+                  role="tab"
+                  aria-controls="Breakfast"
+                  aria-selected="false"
+                  >Pasta <img src="{{url_for('static',filename='img/icon/play.svg')}}" alt="play"
+                /></a>
+
+                <img
+                  src="{{url_for('static',filename='img/sushi.png')}}"
+                  alt=""
+                  srcset=""
+                  width="35px"
+                  height="38px"
+                  style="margin-right: -12%"
+                  class="mobile-hide"
+                 
+                />
+                <a
+                  id="Launch-tab"
+                  data-toggle="tab"
+                  href="#Sushi"
+                  role="tab"
+                  aria-controls="Launch"
+                  aria-selected="false"
+                  >Sushis <img src="{{url_for('static',filename='img/icon/play.svg')}}" alt="play"
+                /></a>
+                <!-- <img
+                  src="{{url_for('static',filename='img/steak.png')}}"
+                  alt=""
+                  srcset=""
+                  width="35px"
+                  height="38px"
+                  style="margin-right: -12%"
+                  class="mobile-hide"
+                />
+                <a
+                  id="Dinner-tab"
+                  data-toggle="tab"
+                  href="#Plat"
+                  role="tab"
+                  aria-controls="Dinner"
+                  aria-selected="false"
+                  >Plats<img src="{{url_for('static',filename='img/icon/play.svg')}}" alt="play" />
+                </a> -->
+                <img
+                  src="{{url_for('static',filename='img/panna-cotta.png')}}"
+                  alt=""
+                  srcset=""
+                  width="35px"
+                  height="38px"
+                  style="margin-right: -12%"
+                  class="mobile-hide"
+                />
+                <a
+                  id="Sneaks-tab"
+                  data-toggle="tab"
+                  href="#Dessert"
+                  role="tab"
+                  aria-controls="Sneaks"
+                  aria-selected="false"
+                  >Déssert<img src="{{url_for('static',filename='img/icon/play.svg')}}" alt="play"
+                /></a>
+              </div>
+            </div>
+            
+  
+            <div class="col-lg-12">
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active single-member"
+                  id="Entree"
+                  role="tabpanel"
+                  aria-labelledby="Special-tab"
+                >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> Laitue <br> Oeuf mollet <br> Tomate cerise <br> Poulet pane <br> Peretta <br>Pesto <br>Flocons d'avoine <br> Graines de courge</h4>
+                                </div>
+                                <img src="{{url_for('static',filename='img/IMG_1445.jpg')}}" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p> Salade gourmande </p>
+                                  <p> 18.5dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 pasta">
+                            <div class="portfolio-item">
+                              <div class="hover-bg"> 
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> Laitue <br> Parmesan <br> Tomate cerise <br> Poulet pane <br> Croutons <br> Vinaigrette cesar</h4>
+                                </div>
+                                <img src="{{url_for('static',filename='img/IMG_4138.jpg')}}" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Salade cesar </p>
+                                  <p> 17.9dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> Mayonnaise <br> rape de boutargue</h4>
+                                </div>
+                                <img src="{{url_for('static',filename='img/IMG_4116.jpg')}}" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Oeufs Mimosa</p>
+                                  <p> 9.9dt </p>
+                                </div>
+                            </div>
+                          </div>
+
+                        </div>
+
+                    </div>
+                </div>
+               
+                 
+                <div
+                  class="tab-pane fade single-member"
+                  id="Pasta"
+                  role="tabpanel"
+                  aria-labelledby="Breakfast-tab"
+                >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> 200g accompagné de spaguettis aux champignons</h4>
+                                </div>
+                                <img src="/static/img/IMG_1531.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Escalope cordon bleu </p>
+                                  <p> 23,9dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 pasta">
+                            <div class="portfolio-item">
+                              <div class="hover-bg"> 
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> 150g mi-cuit et sa sauce secrète maison <br> spaguettis aux champignons</h4>
+                                </div>
+                                <img src="/static/img/IMG_1591.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Le faux filet</p>
+                                  <p> 42,9dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> 400g <br> sauce chimichurri <br> spaguettis aux champignons</h4>
+                                </div>
+                                <img src="/static/img/IMG_1605.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p> Le filet de daurade</p>
+                                  <p> 25,9dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> à la crème <br> pesto basilic <br> pickles et piments</h4>
+                                </div>
+                                <img src="/static/img/IMG_1614.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Penne au poulet pané</p>
+                                  <p> 18,5dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> recette piquante et épicée aux boulettes de viande et basilic</h4>
+                                </div>
+                                <img src="/static/img/IMG_1683.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Makrouna Arbi</p>
+                                  <p> 18,5dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> Sauce rosée aux basilic et piments</h4>
+                                </div>
+                                <img src="/static/img/IMG_1684.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Spaguettis crevettes tomates</p>
+                                  <p> 32,9dt </p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>
+                
+                </div>
+                <div
+                  class="tab-pane fade single-member"
+                  id="Sushi"
+                  role="tabpanel"
+                  aria-labelledby="Launch-tab"
+                >
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Options: <br> Saumon Avocat 19,9dt <br> Saumon Spicy 19,0dt</h4>
+                                </div>
+                                <img src="/static/img/IMG_1155.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>California Roll 8 pièces</p>
+                                  <p> 19,9dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 pasta">
+                            <div class="portfolio-item">
+                              <div class="hover-bg"> 
+                                <div class="hover-text">
+                                  <h4>Options: <br> 10 classique 24,0dt <br> 16 Mix 39,0dt <br> Plateau crunchy 12 pièces 59.0dt  <br> Plateau saumon 24 pièces 59,0dt  <br> Plateau 40 Mix 79,0dt</h4>
+                                </div>
+                                <img src="/static/img/menu-cover2.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Plateauc 24 pièces </p>
+                                  <p> 59,0dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Options: <br> Saumon Avocat 19,9dt <br> Saumon Spicy 19,0dt</h4>
+                                </div>
+                                <img src="/static/img/IMG_1211.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Saumon Spicy 8 pièces</p>
+                                  <p> 19,0dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Options: <br> Crevette Avocat 24,0dt <br> Poulet Tempura 15,0dt</h4>
+                                 </div>
+                                <img src="/static/img/IMG_1236.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Saumon Spicy 8 pièces</p>
+                                  <p> 24,0dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Options: <br> Concombre 9dt <br> Saumon 18,0dt </h4>
+                                </div>
+                                <img src="/static/img/IMG_1279.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Makis 8 pièces</p>
+                                  <p> 18,0dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Options: <br> Le Mixy Roll 42,0dt <br> Le Karamsumi Roll 42,0dt  </h4>
+                                </div>
+                                <img src="/static/img/IMG_1348.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p> Rolls du Chef 8 pièces</p>
+                                  <p> 42.0dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Options: <br> Saumon Avocat 22,9dt <br> Crevette Avocat 27,5dt <br> Poulet Tempura 17,5dt</h4>
+                                </div>
+                                <img src="/static/img/IMG_1397.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Crunchy 8 pièces</p>
+                                  <p> 22,9dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Options: <br>sashimi saumon frais 1 pièce 3,9dt <br> Nigiri saumon frais 1 pièce 4,6dt<br> Chirachi saumon 8 pièces + riz 36,6dt</h4>
+                                </div>
+                                <img src="/static/img/IMG_1409.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p> Sashimis </p>
+                                  <p> 29,9dt </p>
+                                </div>
+                            </div>
+                          </div>
+
+
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Options: <br> Brochettes Poulet 11,9dt <br> Brochettes Boeuf Fromage 16,0dt </h4>
+                                </div>
+                                <img src="/static/img/IMG_1445.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Les brochettes sauce Teriaki</p>
+                                  <p> 11,9dt</p>
+                                </div>
+                            </div>
+                          </div>
+                          
+
+                        </div>
+
+                    </div>
+                 
+                </div>
+              
+                <div
+                  class="tab-pane fade single-member"
+                  id="Dessert"
+                  role="tabpanel"
+                  aria-labelledby="Sneaks-tab"
+                >
+                <div class="container">
+                    <div class="row">
+                        
+                          
+                          <div class="col-sm-6 col-md-4 col-lg-4 pasta">
+                            <div class="portfolio-item">
+                              <div class="hover-bg"> 
+                                <div class="hover-text">
+                                  <h5>Ingrédients: <br> sauce caramel <br> noisettes <br> boule de glace</h5>
+                                </div>
+                                <img src="/static/img/IMG_1777.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p> Pain Perdu</p>
+                                  <p> 11,9dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> cacahuétes <br>carmel</h4>
+                                </div>
+                                <img src="/static/img/IMG_1817.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p> Mousse au chocolat (Valrhona) </p>
+                                  <p> 10,9dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> gousse de vanille de Madagascar</h4>
+                                </div>
+                                <img src="/static/img/IMG_1884.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p>Crème brulèe  </p>
+                                  <p> 10,9dt </p>
+                                </div>
+                            </div>
+                          </div>
+                          <div class="col-sm-6 col-md-4 col-lg-4 entress">
+                            <div class="portfolio-item">
+                              <div class="hover-bg">
+                                <div class="hover-text">
+                                  <h4>Ingrédients: <br> boule de glace</h4>
+                                </div>
+                                <img src="/static/img/IMG_4082.jpg" class="img-responsive" alt="Project Title"></div>
+                                <div class="label-plat"> <p> Le Fondant au chocolat (Valrhona) </p>
+                                  <p> 14,9dt </p>
+                                </div>
+                            </div>
+                          </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+    
+
+    <!-- food_menu part end-->
+    <!--::chefs_part end::-->
+
+    <!-- footer part start-->
+    <footer class="footer-area">
+      <div class="container">
+          <div class="row">
+              <div class="col-xl-3 col-sm-6 col-md-4">
+                  <div class="single-footer-widget footer_1">
+                      <h4>A propos de nous</h4>
+                      <p>restaurant.</p>
+                  </div>
+              </div>
+              <div class="col-xl-3 col-sm-6 col-md-4">
+                  <div class="single-footer-widget footer_2">
+                      <div class="single-footer-widget footer_2">
+                          <h4>Contactez nous</h4>
+                          <div class="contact_info">
+                              <p><span> Address :</span>1 Rue Mami, Marsa, Tunisia </p>
+                              <p><span> Phone :</span>71 981 733</p>
+                              <p><span> Email : </span>karimgribaa@gmail.com </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+          </div>
+          <div class="copyright_part_text">
+              <div class="row">
+                  <div class="col-lg-8">
+                      <p class="footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                          Copyright &copy; All rights reserved | This website is made with <i class="ti-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Ensit Junior Entreprise</a>
+                          <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                  </div>
+                  <div class="col-lg-4">
+                      <div class="copyright_social_icon text-right">
+                          <a href="https://www.facebook.com/sakurapastamarsa"><i class="fab fa-facebook-f"></i></a>
+                          <a href="https://www.instagram.com/sakurapasta_/"><i class="fab fa-instagram"></i></a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </footer>
+    <!-- footer part end-->
+    <script>
+        $(".mobile-show").hide();
+        if (window.navigator.userAgent.indexOf("Mobile") > -1) {
+            // HIDING ELEMENTS
+            $(".mobile-show").show();
+        } 
+
+         if (window.navigator.userAgent.indexOf("Mobile") > -1) {
+            // HIDING ELEMENTS
+            $(".mobile-hide").hide();
+        }  
+    </script>
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="{{url_for('static',filename='js/jquery-1.12.1.min.js')}}"></script>
+    <!-- popper js -->
+    <script src="{{url_for('static',filename='js/popper.min.js')}}"></script>
+    <!-- bootstrap js -->
+    <script src="{{url_for('static',filename='js/bootstrap.min.js')}}"></script>
+    <!-- easing js -->
+    <script src="{{url_for('static',filename='js/jquery.magnific-popup.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{url_for('static',filename='js/swiper.min.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{url_for('static',filename='js/masonry.pkgd.js')}}"></script>
+    <!-- particles js -->
+    <script src="{{url_for('static',filename='js/owl.carousel.min.js')}}"></script>
+    <!-- swiper js -->
+    <script src="{{url_for('static',filename='js/slick.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/gijgo.min.js')}}"></script>
+    <script src="{{url_for('static',filename='js/jquery.nice-select.min.js')}}"></script>
+    <!-- custom js -->
+    <script src="{{url_for('static',filename='js/custom.js')}}"></script>
+  </body>
+</html>
